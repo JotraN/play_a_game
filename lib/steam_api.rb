@@ -19,7 +19,7 @@ class SteamApi
     url = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/"\
           "?format=json&include_played_free_games=1&include_appinfo=1"\
           "&key=#{@steam_key}&steamid=#{@steam_id}"
-    games_hash = get_hash(url)["response"]["games"]
+    games_hash = get_hash(url)['response']['games']
   end
 
   private :get_hash

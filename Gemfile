@@ -21,6 +21,9 @@ gem 'jbuilder', '~> 2.5'
 # Use RSpec for testing
 gem 'rspec-rails', '~> 3.5'
 gem 'rails-controller-testing'
+# Use vcr and webmock to help with HTTP interaction tests
+gem 'vcr', '~> 3.0.3'
+gem 'webmock', '~> 2.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -22,3 +22,5 @@
 
 # Secret api keys.
 config/secrets.yml
+# vcr cassettes
+spec/cassettes

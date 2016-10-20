@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'steam_api'
 
-RSpec.describe "Steam API" do
+RSpec.describe 'Steam API', :vcr do
   before :each do
     key = Rails.application.secrets.STEAM_KEY
     id = Rails.application.secrets.STEAM_ID
@@ -9,9 +9,9 @@ RSpec.describe "Steam API" do
   end
 
   it 'downloads and parses json' do 
-    url = "https://en.wikipedia.org/w/api.php?action=query&titles=json&format=json"
+    url = 'https://en.wikipedia.org/w/api.php?action=query&titles=json&format=json'
     hash = @steam_api.send(:get_hash, url)
-    expect(hash).to include("batchcomplete")
+    expect(hash).to be_an_instance_of(Hash)
   end
 
   it 'gets a user\'s games' do
