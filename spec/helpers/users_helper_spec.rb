@@ -1,16 +1,6 @@
 require 'rails_helper'
 
-# Specs in this file have access to a helper object that includes
-# the UserHelper. For example:
-#
-# describe UserHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
-RSpec.describe UserHelper, type: :helper do
+RSpec.describe UsersHelper, type: :helper do
 
   describe 'get random game' do
     it 'gets a random game' do
@@ -25,4 +15,5 @@ RSpec.describe UserHelper, type: :helper do
       expect(helper.get_random_game(games)).to be_nil
     end
   end
+
 end
