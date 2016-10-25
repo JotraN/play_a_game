@@ -24,6 +24,7 @@ gem 'rails-controller-testing'
 # Use vcr and webmock to help with HTTP interaction tests
 gem 'vcr', '~> 3.0.3'
 gem 'webmock', '~> 2.1.0'
+gem 'capybara' 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
