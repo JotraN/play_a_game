@@ -12,4 +12,7 @@ class UsersController < ApplicationController
     @game = get_random_game(games)
   end
 
+  def search
+    redirect_to user_path(params[:id])
+  end
 end

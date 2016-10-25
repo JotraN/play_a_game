@@ -1,5 +1,5 @@
-<%= form_tag("/index", method: "get") do %>
+<%= form_tag("/users/search", method: "get") do %>
   <%= label_tag(:id, "Steam ID:") %>
   <%= text_field_tag(:id) %>
-  <%= submit_tag("Find") %>
+  <%= submit_tag("search") %>
 <% end %>
