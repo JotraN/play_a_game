@@ -25,6 +25,8 @@ gem 'rails-controller-testing'
 gem 'vcr', '~> 3.0.3'
 gem 'webmock', '~> 2.1.0'
 gem 'capybara' 
+# Use bootstrap for styling.
+gem 'bootstrap-sass', '~> 3.3.7'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

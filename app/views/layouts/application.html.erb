@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PlayAGame</title>
+    <title>Play A Game</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="vertical-center center">
+      <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

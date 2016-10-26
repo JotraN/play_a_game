@@ -1,5 +1,7 @@
 <%= form_tag("/users/search", method: "get") do %>
-  <%= label_tag(:id, "Steam ID:") %>
-  <%= text_field_tag(:id) %>
-  <%= submit_tag("search") %>
+  <div class="form-group">
+    <%= label_tag(:id, "Steam ID") %>
+    <%= text_field_tag(:id, '', placeholder: "Steam ID", class: "form-control") %>
+  </div>
+  <%= submit_tag("Submit", class: 'btn btn-default') %>
 <% end %>
