@@ -30,5 +30,4 @@ RSpec.describe UsersController, type: :controller do
                                       :id => @ID
     end
   end
-
 end

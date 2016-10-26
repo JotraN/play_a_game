@@ -13,6 +13,6 @@ class UsersController < ApplicationController
   end
 
   def search
-    redirect_to user_path(params[:id])
+    redirect_to show_path(params[:id])
   end
 end
