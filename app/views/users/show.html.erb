@@ -1,1 +1,13 @@
-<%= @game ? @game["name"] : "Error - No game found." %>
+<div class="text-center">
+  <% if @game %>
+    <h5>Try</h5>
+    <a href="http://store.steampowered.com/app/<%= @game['appid'] %>">
+      <h1><%= @game["name"] %></h1>
+      <% if @game["img_logo_url"] %>
+        <img class="img-thumbnail" src="http://media.steampowered.com/steamcommunity/public/images/apps/<%= @game['appid'] %>/<%= @game['img_logo_url'] %>.jpg"><br>
+      <% end %>
+    </a>
+  <% else %>
+    <h1><%= link_to "Error - No game found.", users_path, class: "text-danger" %></h1>
+  <% end %>
+</div>
