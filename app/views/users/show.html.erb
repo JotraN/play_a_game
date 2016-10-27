@@ -7,6 +7,7 @@
         <img class="img-thumbnail" src="http://media.steampowered.com/steamcommunity/public/images/apps/<%= @game['appid'] %>/<%= @game['img_logo_url'] %>.jpg"><br>
       <% end %>
     </a>
+    <%= link_to "Refresh", show_path(params[:id]), class: "btn btn-primary" %>
   <% else %>
     <h1><%= link_to "Error - No game found.", index_path, class: "text-danger" %></h1>
   <% end %>

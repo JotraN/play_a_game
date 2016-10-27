@@ -2,6 +2,8 @@
 @import "bootstrap";
 
 html, body {
+  background-color: #1b2838;
+  color: #8F98A0;
   height: 100%;
 }
 
@@ -21,4 +23,10 @@ html, body {
 
 .text-center a h1 {
   margin: 0 0 14px;
+}
+
+.img-thumbnail {
+  margin: 0 0 20px;
+  border-color: black;
+  background: #37516d;
 }
