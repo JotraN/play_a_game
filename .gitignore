@@ -20,7 +20,5 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# Secret api keys.
-config/secrets.yml
 # vcr cassettes
 spec/cassettes
